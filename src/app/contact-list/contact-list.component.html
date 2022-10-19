@@ -1,0 +1,6 @@
+<input type="text" class="input">
+
+<div class="contact" *ngFor="let contact of contacts">
+    <span class="name">{{contact.name}}</span>
+    <a href="tel:{{contact.phone}}" class="phone">{{contact.phone}}</a>
+</div>

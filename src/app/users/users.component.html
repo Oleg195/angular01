@@ -1,0 +1,11 @@
+<h1>Users</h1>
+<div>
+  <div *ngFor="let user of users">
+    <p>{{ user.first_name }}</p>
+    <p>{{ user.age }}</p>
+  </div>
+  <p *ngIf="flag">On</p>
+  <p *ngIf="!flag">Off</p>
+  <button (click)="toggle()">click</button>
+  <button (click)="showUser()">show</button>
+</div>
